@@ -1,15 +1,17 @@
 # android_strings_translator_py
 >A little python project for translating items in strings.xml by using some public online translation api, such as youdao.
 
-####python version : 2.7.10   
+###python version : 2.7.10   
 
-####structure:
+
+structure:
+----
 ![structure:](res/structure.png)    
 
 License
 ----
 ```
-Copyright 2016 Hyman Lee  
+Copyright 2017 Hyman Lee  
  
  Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
