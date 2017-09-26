@@ -59,7 +59,7 @@ def translate_untranslated_string(from_dict, to_dict, source = 'zh_CHS', target 
 # root_elem为传进来的Elment类，参数indent用于缩进，newline用于换行
 def prettyxml(root_elem, indent, newline, level = 0):
     if root_elem:  # 判断element是否有子元素
-        if root_elem.text == None or root_elem.text.isspace(): # 如果element的text没有内容
+        if root_elem.text is None or root_elem.text.isspace(): # 如果element的text没有内容
             root_elem.text = newline + indent * (level + 1)
         else:
             root_elem.text = newline + indent * (level + 1) + root_elem.text.strip() + newline + indent * (level + 1)

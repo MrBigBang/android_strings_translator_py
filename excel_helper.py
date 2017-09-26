@@ -45,7 +45,7 @@ class ExcelHelper(object):
         wb = self.__getwb()
         ws = wb.active
         headers = ['Name', const.SOURCE, const.TARGET, 'Editor', 'Date']
-        if ws['A1'].value == None:
+        if ws['A1'].value is None:
             for col in range(len(headers)):
                 ws.cell(row = 1, column = col + 1).value = headers[col]
         edit_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")

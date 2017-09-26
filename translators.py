@@ -26,8 +26,8 @@ class GoogleTranslator(object):
 class YouDaoTranslator(object):
     """有道翻译"""
     __salt = 0
-    __app_secret = 'GqCQxmnrloEDcvj57j9aqKbmCNCiB3Qk'
-    __app_id = '3e80cb9d9aab00e5'
+    __app_secret = '应用密钥'
+    __app_id = '应用ID'
 
     def __init__(self):
         super(YouDaoTranslator, self).__init__()
